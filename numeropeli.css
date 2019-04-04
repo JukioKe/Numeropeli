@@ -110,6 +110,16 @@ button {
   margin-right: 6px;
 }
 
+#nollaa {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+  color: white;
+  background-color: #232329;
+  border: 5px solid #232329;
+  margin-right: 6px;
+}
+
 #ylempi, #alempi {
   font-size: 1.5em;
   color: #6B2D5C;
