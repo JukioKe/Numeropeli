@@ -3,12 +3,8 @@
 // arvotaan arvattava numero väliltä 0-100, 0 ja sata myös mahdollisia
 var arvattava = Math.floor(Math.random() * (100 + 1));
 
-// debug-tulostus kehittäjälle, kommentoi pois tuotantoversiosta
-console.log("Arvattava: " + arvattava);
-
-// muuttuja pelaajan nykyistä arvausta varten
-// alkuarvo on undefined, jotta erotetaan, onko tehty yhtään arvausta
-// vai ei
+/* muuttuja pelaajan nykyistä arvausta varten. Alkuarvo on undefined,
+jotta erotetaan, onko tehty yhtään arvausta vai ei*/
 var arvaus = undefined;
 var arvauksia = 0;
 var parasAlin = -1;
@@ -33,7 +29,6 @@ function arvausTehty() {
   var syote = document.getElementById('luku').value;
   arvaus = Number(syote);
   arvausTaulukko.push(arvaus);
-  console.log("Arvaus: " + arvaus);
 
   arvauksia++;
 
@@ -64,7 +59,7 @@ function arvausTehty() {
     parasAlinElem.innerHTML = "";
     parasYlinElem.innerHTML = "";
     vihjeElem.innerHTML = "Hienoa, " + arvaus + " oli oikein! Arvauksia: " + arvauksia;
-    
+
     // jos arvauksia vähemmän kuin 8, näytetään voittoteksti ja ilotulitus
     if (arvauksia < 8) {
       naytaVoittoPopup()
@@ -83,10 +78,11 @@ function arvausTehty() {
 }
 
 function naytaLopetusTeksti() {
+  document.getElementById("lopetusteksti").style.display = "block";
   var teksti = document.getElementById("lopetusteksti").innerHTML + "<br /><br />";
   var i;
   for (i = 0; i < arvausTaulukko.length; i++) {
-      teksti += arvausTaulukko[i] + "<br /><br />";
+    teksti += arvausTaulukko[i] + "<br /><br />";
   }
   lopetusTekstiElem.innerHTML = teksti;
 }

@@ -130,6 +130,7 @@ button {
   font-size: 1.5em;
   color: #6B2D5C;
   font-family: 'Unica One', cursive;
+  display: none;
 }
 
 #lopetusteksti:last-child {
