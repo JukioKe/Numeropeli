@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Numeropeli</title>
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Unica+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="numeropeli.css">
+  <link rel="stylesheet" type="text/css" href="fireworks.css">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link rel="stylesheet" type="text/css" href="voittoteksti.css">
+
+</head>
+
+<body>
+
+
+  <div id="container">
+    <div class="tausta">
+      <div id="logo">
+        <h1>Numeropeli</h1>
+      </div>
+
+      <form id="lomake">
+        <label for="luku">Arvaa luku väliltä 0-100: </label>
+        <input id="luku" type="text" name="luku" autocomplete="off">
+        <button type="submit">Arvaa</button>
+        <button id="nollaa" type="reset" onClick="window.location.reload()">Nollaa</button>
+      </form>
+
+      <p id="vihje"></p>
+      <p id="alempi"></p>
+      <p id="ylempi"></p>
+      <p id="lopetusteksti">Arvaustesi kulku oli seuraava:</p>
+
+      <div class="wrapper" id="wrapper">
+        <marquee behavior="alternate"><span class="marquee">Arvaa oikea alle 8 yrityksellä, niin näet
+            ilotulituksen!</span></marquee>
+      </div>
+      <div class="bar-chart" id="bar-chart">
+
+        <div class="bar" id="lower-bar" style="width: 0%; background-color: blue">
+          <span></span>
+          <p id="lowerbarnumber"></p>
+        </div>
+        <div class="bar" id="middle-bar" style="width: 100%; background-color: orange">
+          <span></span>
+          <p id="middlebarnumber"></p>
+        </div>
+        <div class="bar" id="upper-bar" style="width: 0%; background-color: green">
+          <span></span>
+          <p id="upperbarnumber"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="ilotulitus" id="ilotulitus">
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+  </div>
+
+  <div class="popup" onclick="naytaVoittoPopup()">
+    <span class="popuptext" id="voittoPopup">
+      <svg viewBox="0 0 960 240">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">Voitit!</text>
+        </symbol>
+      
+        <g class = "g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </span>
+  </div>
+
+  <script src="numeropeli.js"></script>
+</body>
+
+</html>

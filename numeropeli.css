@@ -1,0 +1,149 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: darkslategrey;
+    padding: 0 10%;
+    background-color: #6B2D5C;
+}
+
+.bar-chart {
+  display: flex;
+  background-color: #eee;
+  width: 100%;
+  height: 30px;
+  align-items: stretch;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+
+#container {
+  text-align: center;
+}
+
+.tausta {
+  width: 600px;
+  background-color:#7AE2B3;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 40px;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -340px;
+}
+
+#logo {
+  width: 600px;
+  height: 80px;
+  background-image: url("images/numbers2.jpg");
+  background-size: cover;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid #6B2D5C;
+}
+
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  text-shadow: -4px 0 #6B2D5C, 0 4px #6B2D5C, 4px 0 #6B2D5C, 0 -4px #6B2D5C;
+  text-transform: uppercase;
+  font-size: 4em;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+#numerokuva {
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#vihje {
+  font-size: 1.5em;
+  font-family: 'Unica One', cursive;
+  color: #6B2D5C;
+  font-weight: bold;
+}
+
+#lomake {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+label {
+  color: #6B2D5C;
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+}
+
+#luku {
+  font-size: 1.5em;
+  text-align: right;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+  color: #6B2D5C;
+  background-color: white;
+  border: 5px solid #6B2D5C;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 50px;
+  padding-right: 5px;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+  color: white;
+  background-color: #6B2D5C;
+  border: 5px solid #6B2D5C;
+  margin-right: 6px;
+}
+
+#ylempi, #alempi {
+  font-size: 1.5em;
+  color: #6B2D5C;
+  font-family: 'Unica One', cursive;
+}
+
+#lopetusteksti {
+  font-size: 1.5em;
+  color: #6B2D5C;
+  font-family: 'Unica One', cursive;
+}
+
+#lopetusteksti:last-child {
+  font-weight: bold;
+}
+
+.wrapper{
+  width: 100%;
+  background: orange;
+  height: 30px;
+  text-align: right;
+  margin-bottom: -35px;
+}
+
+.marquee {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+  color: #6B2D5C;
+  white-space: nowrap;
+  -webkit-animation: rightThenLeft 5s linear;
+}
+
+#lopetusruutu {
+  background-color: black;
+  vertical-align: middle;
+}
