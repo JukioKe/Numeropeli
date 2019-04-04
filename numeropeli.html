@@ -23,7 +23,7 @@
 
       <form id="lomake">
         <label for="luku">Arvaa luku väliltä 0-100: </label>
-        <input id="luku" type="text" name="luku" autocomplete="off">
+        <input id="luku" type="number" name="luku" autocomplete="off" min="0" max="100" required>
         <button type="submit">Arvaa</button>
         <button id="nollaa" type="reset" onClick="window.location.reload()">Nollaa</button>
       </form>
