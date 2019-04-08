@@ -35,7 +35,7 @@ function arvausTehty() {
   // tyhjennetään lomake uutta arvausta varten
   document.getElementById('lomake').reset();
 
-  // jos arvauksia > 0 ei näytetä wrapperia
+  // jos arvauksia > 0 ei näytetä tekstiwrapperia
   if (arvauksia > 0) {
     document.getElementById('wrapper').style.display = 'none';
   }
@@ -82,7 +82,14 @@ function naytaLopetusTeksti() {
   var teksti = document.getElementById("lopetusteksti").innerHTML + "<br /><br />";
   var i;
   for (i = 0; i < arvausTaulukko.length; i++) {
-    teksti += arvausTaulukko[i] + "<br /><br />";
+    if (i == arvausTaulukko.length - 1) {
+      var str = "<u>" + arvausTaulukko[i] + "</u>";
+      str = str.fontsize(6).bold();
+      teksti += str;
+    } else {
+      teksti += arvausTaulukko[i] + "<br /><br />";
+    }
+
   }
   lopetusTekstiElem.innerHTML = teksti;
 }
