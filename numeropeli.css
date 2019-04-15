@@ -55,7 +55,6 @@ body {
   border: 3px solid #6B2D5C;
 }
 
-
 h1 {
   font-family: 'Luckiest Guy', cursive;
   color: white;
@@ -155,7 +154,6 @@ button {
   font-family: 'Unica One', cursive;
   color: #6B2D5C;
   white-space: nowrap;
-  -webkit-animation: rightThenLeft 5s linear;
 }
 
 #lopetusruutu {
