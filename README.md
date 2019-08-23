@@ -5,3 +5,5 @@ A stylish number game made with HTML, CSS and JavaScript.
 
 
 Winner will see awesome fireworks if guesses right number with less than 8 guesses.
+
+Play game: https://numeropeli.jukka.now.sh/
